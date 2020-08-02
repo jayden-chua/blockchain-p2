@@ -118,6 +118,7 @@ class BlockchainController {
             
         });
     }
+    // Added to test validation, not used for production
     validateChain() {
         this.app.get("/validate-chain", async (req, res) => {
             this.blockchain.chain[1].hash = 'abc';
